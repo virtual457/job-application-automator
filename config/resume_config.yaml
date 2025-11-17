@@ -1,0 +1,102 @@
+# Resume Configuration
+# Defines templates for different role types
+
+roles:
+  backend:
+    header: "Software Engineer | MS CS @ Northeastern | Python, Java, Distributed Systems, Cloud"
+    
+    summary: |
+      Software Engineer and MS CS student seeking Spring/Summer 2026 co-op at {company} (January-August 2026, 8-month availability). Production experience building distributed systems processing 7.5M+ records across 180 countries at LSEG. Expertise in Python, Java, AWS serverless architecture, and event-driven systems. Pursuing MS CS at Northeastern (3.89 GPA) to deepen expertise in distributed systems and cloud-native architectures before completing final year of coursework.
+    
+    skills:
+      "Programming Language": "Python, Java, Go, C++, JavaScript, TypeScript"
+      "Backend Engineering": "Distributed Systems, Microservices, REST APIs, Event-Driven Architectures, Batch Pipelines"
+      "Cloud & Infrastructure": "AWS (Lambda, SQS, API Gateway), Docker, Kubernetes, Terraform, Linux/Unix"
+      "Databases": "PostgreSQL, MySQL, MongoDB, SQL Query Optimization"
+      "Development & DevOps": "Git, CI/CD Pipelines, Agile/Scrum"
+      "AI/ML": "TensorFlow, PyTorch, LLM-powered automation, workflow tools"
+    
+    projects:
+      - "Orion Platform"
+      - "Maritime Logistics Platform"
+      - "Calendly"
+      - "Dino Game Deep RL Agent"
+  
+  ml:
+    header: "ML/AI Engineer | MS CS @ Northeastern | Python, TensorFlow, Deep Learning"
+    
+    summary: |
+      ML/AI Engineer and MS CS student seeking Spring/Summer 2026 co-op at {company} (January-August 2026, 8-month availability). Deep learning expertise with autonomous RL agents (1.5M parameters) and computer vision systems while maintaining production-grade backend systems at LSEG processing 7.5M+ records daily. MS Computer Science candidate (3.89 GPA) combining cutting-edge AI research with production-grade engineering discipline. Experienced with TensorFlow, PyTorch frameworks and AI development tools.
+    
+    skills:
+      "Programming Language": "Python, Java, C++, JavaScript, TypeScript, Go"
+      "AI/ML": "TensorFlow, PyTorch, Deep Reinforcement Learning, Computer Vision, Neural Network Optimization"
+      "Production Engineering": "AWS (Lambda, SQS, API Gateway), Event-Driven Systems, Distributed Systems"
+      "Development & DevOps": "Git, Docker, Kubernetes, CI/CD Pipelines, Linux/Unix"
+      "Databases & Data": "MySQL, PostgreSQL, MongoDB, Pandas, NumPy, Statistical Analysis"
+    
+    projects:
+      - "Dino Game Deep RL Agent"
+      - "Large Scale Data Analysis"
+      - "Face Recognition & Validation System"
+      - "Orion Platform"
+  
+  data:
+    header: "Data Engineer | MS CS @ Northeastern | Python, SQL, ETL Pipelines, Big Data"
+    
+    summary: |
+      Data Engineer and MS CS student seeking Spring/Summer 2026 co-op at {company} (January-August 2026, 8-month availability). Experience building high-throughput data processing pipelines at LSEG processing 7.5M+ compliance records daily with 99.9% data integrity. Expertise in Python, SQL optimization, ETL pipelines, and large-scale data analysis (4.4M+ records). Pursuing MS CS at Northeastern (3.89 GPA) to advance expertise in data engineering and distributed systems.
+    
+    skills:
+      "Programming Language": "Python, SQL, Java, JavaScript"
+      "Data Processing": "ETL Pipelines, Batch Processing, Real-time Streaming, Data Migration"
+      "Databases": "MySQL, PostgreSQL, MongoDB, NoSQL, Query Optimization"
+      "Big Data & Analytics": "Pandas, NumPy, Statistical Modeling, Data Visualization"
+      "Cloud & Infrastructure": "AWS (Lambda, SQS), Docker, Linux/Unix"
+      "Development Tools": "Git, CI/CD, Agile/Scrum"
+    
+    projects:
+      - "Maritime Logistics Platform"
+      - "Large Scale Data Analysis"
+      - "Port Management System"
+      - "Dino Game Deep RL Agent"
+  
+  algorithms:
+    header: "Software Engineer | MS CS @ Northeastern | C++, Java, Python | Algorithms & Systems"
+    
+    summary: |
+      Software Engineer and MS CS student seeking Spring/Summer 2026 co-op at {company} (January-August 2026, 8-month availability). Strong foundation in algorithms, data structures, and object-oriented programming with experience building complex systems at LSEG. Expertise in C++, Java, Python with proven AI/ML capabilities and systematic problem-solving approach. Pursuing MS CS at Northeastern (3.89 GPA) to deepen expertise in advanced algorithms and systems engineering.
+    
+    skills:
+      "Programming Language": "C++, Java, Python, Go, C, JavaScript"
+      "Algorithms & Data Structures": "Design Patterns, Graph Algorithms, Dynamic Programming, Object-Oriented Design"
+      "AI/ML": "TensorFlow, PyTorch, Deep Reinforcement Learning, Computer Vision, Neural Network Optimization"
+      "Software Engineering": "Test-Driven Development, System Design, Microservices, RESTful APIs"
+      "Development & DevOps": "Git, Linux/Unix, CI/CD Pipelines, Agile/Scrum"
+      "Cloud & Infrastructure": "AWS (Lambda, SQS, API Gateway), Docker, Kubernetes"
+    
+    projects:
+      - "Calendly"
+      - "Dino Game Deep RL Agent"
+      - "Orion Platform"
+      - "Maritime Logistics Platform"
+  
+  general:
+    header: "Software Engineer | MS CS @ Northeastern | Python, Distributed Systems, Cloud, Financial Systems"
+    
+    summary: |
+      Software Engineer and MS CS student seeking Spring/Summer 2026 co-op at {company} (January-August 2026, 8-month availability). Production experience building scalable distributed systems processing 7.5M+ records across 180 countries at LSEG, improving reliability, throughput, and developer productivity. Passionate about Python, financial systems, and building high-impact products with fast iteration and strong ownership.
+    
+    skills:
+      "Programming Language": "Python, Java, Go, C++, TypeScript, JavaScript"
+      "Backend Engineering": "Distributed Systems, Microservices, REST APIs, Event-Driven Architectures, Batch Pipelines"
+      "Cloud & Infrastructure": "AWS (Lambda, SQS, API Gateway), Docker, Kubernetes, Terraform, Linux/Unix"
+      "Databases": "PostgreSQL, MySQL, MongoDB, SQL Query Optimization"
+      "Fintech & Systems": "Risk/Compliance Data Pipelines, Transaction Workflows, System Reliability"
+      "AI/ML": "TensorFlow, PyTorch, LLM-powered automation, workflow tools"
+    
+    projects:
+      - "Dino Game Deep RL Agent"
+      - "Orion Platform"
+      - "Calendly"
+      - "Maritime Logistics Platform"

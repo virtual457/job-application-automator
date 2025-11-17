@@ -1,0 +1,50 @@
+# Current Application Content
+# Intuit - Software Engineer Intern (Backend/Web) - November 2025
+
+header:
+  name: "Chandan Gowda K S"
+  title: "Software Engineer | MS CS @ Northeastern | Java, Python, Backend, REST APIs, Cloud"
+  contact: "+1 (857) 421-7469; chandan.keelara@gmail.com; LinkedIn; Portfolio; GitHub;"
+
+summary: "Software Engineer and MS CS student seeking Spring/Summer 2026 internship at **Intuit** (January-August 2026, 8-month availability). Production experience developing **web applications** and **backend services** at **LSEG** with **Java, Python, Spring-like frameworks**, and **RESTful APIs** serving **180+ countries**. Built **server-side applications** with **MySQL, microservices**, and **cloud platforms (AWS)**. Strong **OOP, Agile**, and **problem-solving** skills. Pursuing MS CS at Northeastern (**3.89 GPA**) before final year."
+
+skills:
+  - category: "Programming Language"
+    items: "Java, Python, Node.js, JavaScript, Go, C++"
+  
+  - category: "Backend & Server-side"
+    items: "Spring MVC, Django, Express, REST APIs, Microservices, Server Frameworks"
+  
+  - category: "Databases"
+    items: "MySQL, PostgreSQL, MongoDB, SQL, NoSQL, Database Design, Query Optimization"
+  
+  - category: "Web & API Development"
+    items: "RESTful API Design, API Integrations, Web Applications, Backend Services"
+  
+  - category: "Cloud & Infrastructure"
+    items: "AWS (Lambda, SQS, API Gateway), Docker, Kubernetes, Cloud-native"
+  
+  - category: "Software Engineering"
+    items: "OOP Design, Agile/Scrum, SDLC, Code Review, Testing, Debugging"
+  
+  - category: "AI & ML Exposure"
+    items: "PyTorch, TensorFlow, ML Pipelines, AI Tools, LLM Integration"
+
+projects:
+  - title: "Calendly - Calendar Management System"
+    tech: "Java, Spring-like Architecture, REST APIs, OOP"
+    github: "GitHub"
+    bullet1: "Developed **web application** using **Java** with **object-oriented design (6+ patterns)** and **RESTful API principles**, achieving **98% test coverage** demonstrating **strong coding standards**."
+    bullet2: "Built using **Agile methodology** with **comprehensive code reviews**, **debugging**, and **deployment practices**, showing **self-starter attitude** and ability to **deliver on assigned tasks** independently."
+  
+  - title: "Maritime Logistics Platform"
+    tech: "Django, Python, MySQL, RESTful APIs, Web Applications"
+    github: "GitHub"
+    bullet1: "Developed **full-stack web application** with **Django server framework**, **RESTful API design**, and **MySQL database** supporting **multi-user workflows** and complex business logic."
+    bullet2: "Implemented **database integrations**, **API endpoints**, and **deployment processes** collaborating with **cross-functional teams** to understand requirements and deliver scalable solutions."
+  
+  - title: "Orion Platform"
+    tech: "Go, Kubernetes, Cloud Infrastructure, Backend Systems"
+    github: "GitHub"
+    bullet1: "Built **cloud-native backend platform** with **automated deployment**, **API services**, and **monitoring**, demonstrating expertise in building **scalable server-side applications**."
+    bullet2: "Worked with **cloud platforms (AWS-like)**, **containerization**, and **system design** showing ability to **learn new technologies** and apply **software development best practices**."

@@ -1,0 +1,50 @@
+# Example: First 15 Applications for Week 1
+
+applications:
+  # Backend Engineering Focus
+  - company: Salesforce
+    role_type: backend
+  
+  - company: Intuit
+    role_type: backend
+  
+  - company: Microsoft
+    role_type: backend
+  
+  - company: Amazon
+    role_type: backend
+  
+  - company: Stripe
+    role_type: backend
+  
+  - company: Databricks
+    role_type: backend
+  
+  - company: Snowflake
+    role_type: backend
+  
+  - company: IBM
+    role_type: algorithms
+  
+  - company: Uber
+    role_type: backend
+  
+  # ML/AI Engineering Focus
+  - company: ByteDance
+    role_type: ml
+  
+  - company: Qualcomm
+    role_type: ml
+  
+  - company: Adobe
+    role_type: ml
+  
+  - company: ServiceNow
+    role_type: ml
+  
+  # Additional Targets
+  - company: Wing
+    role_type: backend
+  
+  - company: DoorDash
+    role_type: backend
