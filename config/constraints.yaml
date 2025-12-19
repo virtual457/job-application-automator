@@ -1,0 +1,66 @@
+# Resume YAML Constraints Configuration
+# Used by validate_yaml.py to check current_application.yaml
+
+summary:
+  min_chars: 450
+  max_chars: 513
+  min_bold: 5
+  max_bold: 8
+  required_keywords:
+    - "MS Computer Science student at Northeastern"
+    - "3.89 GPA"
+    - "London Stock Exchange Group"
+
+skills:
+  exact_categories: 7
+  category_name_max_chars: 30  # Category name like "Programming Languages"
+  items_max_chars: 82  # Maximum only - add what's relevant and factual, don't pad
+  # No minimum - include only relevant skills
+
+experience:
+  companies:
+    "London Stock Exchange Group (LSEG)":
+      exact_bullets: 5
+      bullet_min_chars: 150
+      bullet_max_chars: 250  # Increased from 200 for more space
+      bullet_min_bold: 3
+      bullet_max_bold: 5
+      required_fields:
+        role: "Senior Software Engineer"
+        location: "Bengaluru"
+        duration: "08-2022 to 12-2024"
+
+    "Infosys":
+      exact_bullets: 4
+      bullet_min_chars: 150
+      bullet_max_chars: 250  # Increased from 200 for more space
+      bullet_min_bold: 3
+      bullet_max_bold: 5
+      required_fields:
+        role: "Senior Systems Engineer"
+        location: "Bengaluru"
+        duration: "10-2020 to 07-2022"
+
+projects:
+  exact_count: 3
+  tech_max_chars: 80
+  bullet_fields:
+    - bullet1
+    - bullet2
+  bullet_max_chars: 250  # Increased from 200 for more space
+  bullet_min_bold: 3
+  bullet_max_bold: 5
+  required_fields:
+    - title
+    - tech
+    - github
+    - bullet1
+    - bullet2
+
+header:
+  required_fields:
+    - name
+    - title
+    - contact
+  name_exact: "Chandan Gowda K S"
+  contact_exact: "+1 (857) 421-7469; chandan.keelara@gmail.com; LinkedIn; Portfolio; GitHub;"

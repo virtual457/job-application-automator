@@ -1,0 +1,50 @@
+# Template: Full-Stack (Backend-Heavy) - SQL + Backend + Light React
+# Use for roles requiring: Backend development, SQL expertise, with some frontend/React
+
+header:
+  name: "Chandan Gowda K S"
+  title: "Full-Stack Engineer | MS CS @ Northeastern | Java, Python, SQL, React, Backend, APIs"
+  contact: "+1 (857) 421-7469; chandan.keelara@gmail.com; LinkedIn; Portfolio; GitHub;"
+
+summary: "Full-Stack Engineer and MS CS student seeking Spring/Summer 2026 internship at **[COMPANY]** (January-August 2026, 8-month availability). Production experience building **backend services** and **database-driven applications** at **LSEG** with **Java, Python, SQL**, and **RESTful APIs** serving **180+ countries**. Strong **SQL optimization** and **backend architecture** expertise with **React/JavaScript** frontend capabilities. Pursuing MS CS at Northeastern (**3.89 GPA**) before final year."
+
+skills:
+  - category: "Programming Language"
+    items: "Java, Python, SQL, JavaScript, TypeScript, Go"
+  
+  - category: "Backend Development"
+    items: "REST APIs, Microservices, Distributed Systems, Server-side Logic"
+  
+  - category: "Databases & SQL"
+    items: "MySQL, PostgreSQL, SQL Optimization, Stored Procedures, NoSQL, Query Performance"
+  
+  - category: "Frontend Development"
+    items: "React, JavaScript, TypeScript, HTML/CSS, Component Design"
+  
+  - category: "Full-Stack Frameworks"
+    items: "Spring Boot, Django, Node.js, Express, Full-stack Architecture"
+  
+  - category: "Cloud & Infrastructure"
+    items: "AWS (Lambda, SQS, API Gateway), Docker, Kubernetes"
+  
+  - category: "Development & Tools"
+    items: "Git, CI/CD, Agile, Code Review, Testing, Debugging"
+
+projects:
+  - title: "Maritime Logistics Platform"
+    tech: "Django, Python, MySQL, JavaScript, Full-stack"
+    github: "GitHub"
+    bullet1: "Built **full-stack application** with **Django backend**, **advanced SQL optimization (Dijkstra algorithm)**, and **JavaScript frontend**, demonstrating **end-to-end development** from **database design** to **UI**."
+    bullet2: "Implemented **complex SQL queries**, **stored procedures**, and **RESTful API layer** with **React-like frontend patterns** supporting **1000+ concurrent users** and **multi-role workflows**."
+  
+  - title: "Calendly - Calendar Management System"
+    tech: "Java, Backend Architecture, SQL, OOP"
+    github: "GitHub"
+    bullet1: "Developed **backend-heavy application** with **Java**, **database integration**, and **multi-interface support** (including **GUI**) implementing **6+ design patterns** and **comprehensive testing**."
+    bullet2: "Architected **data persistence layer**, **SQL-based storage**, and **business logic tier** with **98% test coverage**, demonstrating **strong backend and database** expertise."
+  
+  - title: "Orion Platform"
+    tech: "Go, Kubernetes, Backend Infrastructure, APIs"
+    github: "GitHub"
+    bullet1: "Built **backend platform** with **Go**, **RESTful APIs**, and **cloud infrastructure**, showing versatility across **backend technologies** and **scalable system design**."
+    bullet2: "Implemented **automated workflows**, **data management**, and **service orchestration** demonstrating **full-stack thinking** with **backend specialization**."

@@ -1,0 +1,69 @@
+header:
+  name: "Chandan Gowda K S"
+  title: "Software Engineer | MS CS @ Northeastern | Python, Go, JavaScript, Full-Stack, Vue"
+  contact: "+1 (857) 421-7469; chandan.keelara@gmail.com; LinkedIn; Portfolio; GitHub;"
+
+summary: "MS Computer Science student at Northeastern (**3.89 GPA**) with **full-stack development** experience building **Python/Go backend** and **JavaScript/TypeScript frontend** applications. Developed **production systems** at **London Stock Exchange Group** processing **7.5M+ records** with **99.9% reliability**. Built **complete web applications** with **React/Next.js**, **Node.js/Express**, and **RESTful APIs**. Strong experience in **Python, Go, JavaScript**, and delivering **end-to-end solutions** from design to deployment. Excited to learn from Tesla's recruiting team and contribute to building internal applications that improve hiring processes."
+
+skills:
+  - category: "Programming Languages"
+    items: "Python, JavaScript, TypeScript, Go, Java, SQL, HTML/CSS, Shell Scripting"
+  
+  - category: "Frontend Development"
+    items: "React, Next.js, TypeScript, JavaScript, Redux, Vue.js (learning), HTML/CSS, Responsive Design"
+  
+  - category: "Backend Development"
+    items: "Python, Go, Node.js, Express, Flask, FastAPI, REST APIs, Microservices"
+  
+  - category: "Full-Stack & Web"
+    items: "Full-Stack Development, Web Applications, API Integration, State Management"
+  
+  - category: "Databases & Data"
+    items: "PostgreSQL, MySQL, MongoDB, SQL, NoSQL, Database Design, Query Optimization"
+  
+  - category: "Cloud & DevOps"
+    items: "Docker, Kubernetes, AWS, CI/CD, Git, Linux, Deployment, Version Control"
+  
+  - category: "Development Practices"
+    items: "Agile, Code Review, Testing, Design Patterns, OOP, Performance Optimization"
+
+experience:
+  - company: "London Stock Exchange Group (LSEG)"
+    role: "Senior Software Engineer"
+    location: "Bengaluru"
+    duration: "08-2022 to 12-2024"
+    bullets:
+      - "Developed **production applications** processing **7.5M+ records daily** for **global institutions** using **Python** and **Java microservices**, ensuring **99.9% reliability** and **low-latency performance** for mission-critical systems."
+      - "Built **full-stack solutions** with **RESTful APIs** implementing **CRUD operations** and **workflow automation** across **180+ countries**, demonstrating end-to-end development from **backend logic** to **API design**."
+      - "Engineered **event-driven systems** with **Python** and **AWS**, optimizing **performance** and reducing **latency by 40%** through **code optimization** and **monitoring**, ensuring **high maintainability** and **stability**."
+      - "Collaborated with **cross-functional teams** including product managers and stakeholders to gather requirements, design features, and deploy applications with **zero downtime** across **enterprise environments**."
+      - "Implemented **comprehensive testing** and **error handling** with **CloudWatch monitoring**, ensuring **code quality** and **system reliability** for applications serving global financial institutions with strict performance requirements."
+  
+  - company: "Infosys"
+    role: "Senior Systems Engineer"
+    location: "Bengaluru"
+    duration: "10-2020 to 07-2022"
+    bullets:
+      - "Built **Python applications** with **full-stack capabilities**, achieving **3x throughput improvement** through **code optimization** and **efficient architecture** for enterprise systems processing millions of transactions."
+      - "Designed **API layers** and **microservices integration**, reducing manual **interventions by 50%** through **automated workflows** and **well-architected solutions** following **design patterns** and **best practices**."
+      - "Optimized **database performance** and **application code**, reducing **latency by 35%** through strategic **query optimization** and **performance tuning** for high-volume applications with excellent maintainability."
+      - "Developed **monitoring and testing frameworks** for production apps, working with users and support teams to analyze requirements, debug issues, and ship reliable features under tight deadlines with **20% improvement**."
+
+projects:
+  - title: "Kambaz Learning Management System"
+    tech: "Next.js, React 19, TypeScript, Redux, Node.js, Express, Full-Stack"
+    github: "https://github.com/virtual457/kambaz-next-js"
+    bullet1: "Built **complete full-stack LMS application** with **React/Next.js/TypeScript frontend** and **Node.js/Express backend**, demonstrating **end-to-end development** from UI design to **RESTful API** implementation with **Redux state management**."
+    bullet2: "Architected **modular backend** with **DAO pattern** and **30+ API endpoints** for users, courses, enrollments - deployed live on **Vercel/Render** showcasing **production deployment**, **testing**, and **full-stack shipping** capabilities."
+  
+  - title: "LLM Multi-Agent Resume Optimizer"
+    tech: "Python, FastAPI, React, Next.js, TypeScript, REST APIs, Full-Stack"
+    github: "https://github.com/virtual457/llm-multi-agent-resume-optimizer"
+    bullet1: "Developed **full-stack application** with **Python/FastAPI backend** (9 REST APIs) and **React/Next.js frontend**, implementing **WebSocket communication** for **real-time updates** and demonstrating **API design** and **frontend-backend integration**."
+    bullet2: "Designed **user-facing features** with **TypeScript**, **state management**, and **responsive UI**, showcasing ability to build **maintainable**, **well-architected applications** following **software engineering best practices** and **design patterns**."
+  
+  - title: "Port Management System"
+    tech: "Python, Django, JavaScript, MySQL, Full-Stack Web Application"
+    github: "https://github.com/virtual457/Port-Management-System"
+    bullet1: "Created **full-stack web application** with **Django backend** and **JavaScript frontend**, implementing **complex database (15+ tables)** and **role-based authentication** for multi-user workflows with **production-quality code**."
+    bullet2: "Built **RESTful API layer** with **MVC architecture** and **comprehensive error handling**, demonstrating **end-to-end development** skills and ability to ship **reliable**, **well-tested applications** with excellent **code quality**."

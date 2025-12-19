@@ -1,0 +1,112 @@
+% Chandan Resume Template - Professional LaTeX
+% Generated from YAML configuration
+\documentclass[10pt]{article}
+
+\usepackage[
+  top=0.2in,
+  bottom=0.25in,
+  left=0.5in,
+  right=0.5in
+]{geometry}
+
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{tabularx}
+
+\pagenumbering{gobble}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+\setlist[itemize]{noitemsep, topsep=2pt, leftmargin=1.2em}
+
+\newcommand{\ext}{\kern0.08em\raisebox{0.15ex}{\tiny$\nearrow$}}
+
+\begin{document}
+\vspace*{-10pt}
+
+% ---------- Header ----------
+\begin{center}
+{\LARGE \textbf{((( header.name )))}} \\[-2pt]
+
+((( header.title ))) \\[-2pt]
+
+((( header.contact )))
+\end{center}
+\vspace{-12pt}
+
+% ---------- Summary ----------
+\section*{Summary}
+((( summary )))
+
+% ---------- Education ----------
+\section*{Education}
+
+\textbf{MS in Computer Science}, Northeastern University, Boston, MA
+\hfill \textit{Jan 2025 -- May 2027} \\
+\textit{Relevant Coursework:} Programming Design Principles, Machine Learning, Database Management Systems, Web Development (MERN), Natural Language Processing, Generative AI
+\hfill \textit{GPA: 3.89/4.0}
+
+\vspace{4pt}
+
+\textbf{BE in Computer Science}, Nitte Meenakshi Institute of Technology, Bengaluru
+\hfill \textit{Aug 2016 -- Aug 2020} \\
+\textit{Relevant Coursework:} Data Structures, Operating Systems, Distributed Systems
+\hfill \textit{GPA: 8.76/10}
+
+% ---------- Technical Skills ----------
+\section*{Technical Skills}
+
+\begin{tabularx}{\textwidth}{l X}
+((* for skill in skills *))
+\textbf{((( skill.category )))} &
+((( skill.items ))) \\
+((* if not loop.last *))
+
+((* endif *))
+((* endfor *))
+\end{tabularx}
+
+% ---------- Work Experience ----------
+\section*{Work Experience}
+
+((* for exp in experience *))
+\textbf{((( exp.company )))} \textbar\ ((( exp.role )))
+\hfill \textit{((( exp.duration )))}
+\begin{itemize}
+((* for bullet in exp.bullets *))
+  \item ((( bullet )))
+((* endfor *))
+\end{itemize}
+
+((* if not loop.last *))
+((* endif *))
+((* endfor *))
+
+% ---------- Projects ----------
+\section*{Projects}
+
+((* for project in projects *))
+\textbf{((( project.title )))} \textbar\ ((( project.tech )))
+\hfill \href{https://github.com/virtual457}{((( project.github )))}\ext
+\begin{itemize}
+  \item ((( project.bullet1 )))
+  \item ((( project.bullet2 )))
+\end{itemize}
+
+((* if not loop.last *))
+((* endif *))
+((* endfor *))
+
+% ---------- Achievements ----------
+\section*{Achievements}
+\begin{itemize}
+  \item Published an \textbf{IEEE research paper} on an AI-based doctor--patient assistance system
+  (\href{https://ieeexplore.ieee.org/document/9532856}{IEEE Xplore}\ext).
+  \item AWS Certified Cloud Practitioner
+  (\href{https://www.credly.com/badges/29ec1719-01bc-42df-850d-f2a7a3e6bca6/linked_in_profile}{Credential}\ext).
+\end{itemize}
+
+\end{document}

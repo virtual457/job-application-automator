@@ -1,50 +1,71 @@
-# Current Application Content
-# Intuit - Software Engineer Intern (Backend/Web) - November 2025
-
 header:
   name: "Chandan Gowda K S"
-  title: "Software Engineer | MS CS @ Northeastern | Java, Python, Backend, REST APIs, Cloud"
+  title: "ML Engineer | MS CS @ Northeastern | F1 CPT/OPT | PyTorch, LLMs, Kubernetes"
   contact: "+1 (857) 421-7469; chandan.keelara@gmail.com; LinkedIn; Portfolio; GitHub;"
 
-summary: "Software Engineer and MS CS student seeking Spring/Summer 2026 internship at **Intuit** (January-August 2026, 8-month availability). Production experience developing **web applications** and **backend services** at **LSEG** with **Java, Python, Spring-like frameworks**, and **RESTful APIs** serving **180+ countries**. Built **server-side applications** with **MySQL, microservices**, and **cloud platforms (AWS)**. Strong **OOP, Agile**, and **problem-solving** skills. Pursuing MS CS at Northeastern (**3.89 GPA**) before final year."
+company_name: "Nokia"
+
+summary: "MS Computer Science student at Northeastern (**3.89 GPA**) with expertise in **LLM systems**, **PyTorch**, and **distributed ML infrastructure**. Built production systems at **London Stock Exchange Group** processing **7.5M+ records** with **40% performance improvement**. Strong foundation in Transformers, RAG, Kubernetes, and neural network optimization. Excited to advance LLM inference and MLOps platforms at Nokia."
 
 skills:
-  - category: "Programming Language"
-    items: "Java, Python, Node.js, JavaScript, Go, C++"
+  - category: "Programming Languages"
+    items: "Python, Go, Java, C++, JavaScript, TypeScript, SQL"
   
-  - category: "Backend & Server-side"
-    items: "Spring MVC, Django, Express, REST APIs, Microservices, Server Frameworks"
+  - category: "AI & Machine Learning"
+    items: "PyTorch, TensorFlow, Deep Learning, Transformers, Neural Networks, Deep RL, Computer Vision"
   
-  - category: "Databases"
-    items: "MySQL, PostgreSQL, MongoDB, SQL, NoSQL, Database Design, Query Optimization"
+  - category: "ML Engineering & Infrastructure"
+    items: "LLM Systems, RAG, LangChain, Multi-Agent AI, Semantic Search, Vector Databases, Model Training"
   
-  - category: "Web & API Development"
-    items: "RESTful API Design, API Integrations, Web Applications, Backend Services"
+  - category: "Cloud & Orchestration"
+    items: "Kubernetes, Docker, AWS (Lambda, SQS, API Gateway), Container Orchestration, Cloud Platforms"
   
-  - category: "Cloud & Infrastructure"
-    items: "AWS (Lambda, SQS, API Gateway), Docker, Kubernetes, Cloud-native"
+  - category: "Backend & Distributed Systems"
+    items: "Microservices, REST APIs, Event-Driven Architecture, Distributed Systems, Performance Optimization"
+  
+  - category: "Databases & Tools"
+    items: "PostgreSQL, MySQL, MongoDB, ChromaDB, Git, CI/CD, Linux/Unix"
   
   - category: "Software Engineering"
-    items: "OOP Design, Agile/Scrum, SDLC, Code Review, Testing, Debugging"
+    items: "System Design, Algorithms, Data Structures, Debugging, Testing, OOP, Design Patterns"
+
+experience:
+  - company: "London Stock Exchange Group (LSEG)"
+    role: "Senior Software Engineer"
+    location: "Bengaluru"
+    duration: "08-2022 to 12-2024"
+    bullets:
+      - "Engineered **event-driven pipeline** serving **180+ countries**, transforming **7.5M+ XML records** into JSON at **40 records/second** with **Python** and **AWS**, demonstrating **distributed systems** expertise for large-scale ML-ready data processing."
+      - "Architected **multi-queue routing** in **Python** with **AWS Lambda and SQS**, implementing **intelligent orchestration** and **priority handling**, improving turnaround time by **35%** through automated decision-making and workflow optimization."
+      - "Optimized **Lambda microservices** through **performance tuning** and **batch processing**, reducing **latency by 40%** and supporting sustained throughput under large-scale workloads with **CloudWatch monitoring** and debugging."
+      - "Developed **scalable microservices** in **Java Micronaut** on **AWS Lambda** with **API Gateway**, providing low-latency operations and workflow integrations for distributed data processing at global scale."
+      - "Collaborated with **7 cross-functional teams** on **zero-downtime migrations** and production deployments, demonstrating strong **debugging** and **system analysis** for mission-critical distributed systems."
   
-  - category: "AI & ML Exposure"
-    items: "PyTorch, TensorFlow, ML Pipelines, AI Tools, LLM Integration"
+  - company: "Infosys"
+    role: "Senior Systems Engineer"
+    location: "Bengaluru"
+    duration: "10-2020 to 07-2022"
+    bullets:
+      - "Engineered **Python pipelines** with **concurrent execution**, achieving **3x throughput improvement** through **parallel processing** and resource optimization for high-volume enterprise workloads and data transformation."
+      - "Designed **microservices integration** and **API orchestration**, reducing manual **interventions by 50%** through automated workflows and intelligent service discovery for distributed enterprise systems."
+      - "Optimized **database queries** and **ETL pipelines** through strategic indexing and **batch processing**, reducing data processing **latency by 35%** for scalable enterprise data workflows."
+      - "Developed **monitoring frameworks** with **real-time failure detection** and **automated retry mechanisms**, improving system reliability and data accuracy by **20%** through observability best practices."
 
 projects:
-  - title: "Calendly - Calendar Management System"
-    tech: "Java, Spring-like Architecture, REST APIs, OOP"
+  - title: "LLM Multi-Agent Resume Optimizer"
+    tech: "Python, LangChain, PyTorch, ChromaDB, RAG, FastAPI, React, Transformers"
     github: "GitHub"
-    bullet1: "Developed **web application** using **Java** with **object-oriented design (6+ patterns)** and **RESTful API principles**, achieving **98% test coverage** demonstrating **strong coding standards**."
-    bullet2: "Built using **Agile methodology** with **comprehensive code reviews**, **debugging**, and **deployment practices**, showing **self-starter attitude** and ability to **deliver on assigned tasks** independently."
+    bullet1: "Architected **RAG-powered LLM system** with **LangChain ReAct framework** and **semantic search** across comprehensive knowledge sources, implementing **multi-agent orchestration** with **tool calling** and **iterative refinement** achieving **90+ quality scores**."
+    bullet2: "Built **ML infrastructure** with **vector database (ChromaDB)**, **FastAPI backend** (10 REST endpoints), and **real-time agent workflows**, demonstrating **production-grade LLM system design** and **distributed AI architecture** for intelligent automation."
   
-  - title: "Maritime Logistics Platform"
-    tech: "Django, Python, MySQL, RESTful APIs, Web Applications"
+  - title: "Dino Game Deep RL Agent"
+    tech: "Python, PyTorch, Deep RL, ResNet, Computer Vision, GPU Training"
     github: "GitHub"
-    bullet1: "Developed **full-stack web application** with **Django server framework**, **RESTful API design**, and **MySQL database** supporting **multi-user workflows** and complex business logic."
-    bullet2: "Implemented **database integrations**, **API endpoints**, and **deployment processes** collaborating with **cross-functional teams** to understand requirements and deliver scalable solutions."
+    bullet1: "Developed **autonomous AI agent** using **PyTorch** and **Deep RL (Double DQN)** with **ResNet architecture (1.5M parameters)**, achieving **real-time inference at 16.67 FPS** and demonstrating **GPU-accelerated training** for complex systems."
+    bullet2: "Engineered **automated training pipeline** with **experience replay**, **4-frame stacking**, and **performance monitoring**, showcasing expertise in **neural network optimization**, **model training workflows**, and **production-ready RL systems**."
   
   - title: "Orion Platform"
-    tech: "Go, Kubernetes, Cloud Infrastructure, Backend Systems"
+    tech: "Go, Kubernetes, Operator SDK, Docker, CRDs, Cloud-Native"
     github: "GitHub"
-    bullet1: "Built **cloud-native backend platform** with **automated deployment**, **API services**, and **monitoring**, demonstrating expertise in building **scalable server-side applications**."
-    bullet2: "Worked with **cloud platforms (AWS-like)**, **containerization**, and **system design** showing ability to **learn new technologies** and apply **software development best practices**."
+    bullet1: "Architected **cloud-native platform** with **custom Kubernetes Operator in Go**, enabling **single-command deployment** and **automated resource provisioning** across environments, demonstrating **distributed systems design** and **container orchestration** expertise."
+    bullet2: "Implemented **event-driven reconciliation** with **health monitoring** and **scaling policies**, supporting **10+ concurrent deployments** with **sub-second sync**, showcasing **production-grade infrastructure-as-code** and **k8s controller** development."

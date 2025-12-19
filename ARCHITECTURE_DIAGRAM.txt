@@ -1,0 +1,266 @@
+# System Architecture: YAML → PDF Generation
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                   INPUT: Job Description                         │
+│                                                                  │
+│  Analyze JD → Generate YAML → Save to config/                   │
+└────────────────────┬────────────────────────────────────────────┘
+                     │
+                     ▼
+┌─────────────────────────────────────────────────────────────────┐
+│              config/current_application.yaml                     │
+├─────────────────────────────────────────────────────────────────┤
+│  header:                                                         │
+│    name: "Chandan Gowda K S"                                    │
+│    title: "ML Engineer | MS CS @ Northeastern | ..."            │
+│                                                                  │
+│  summary: "MS Computer Science student..."                      │
+│                                                                  │
+│  skills:                                                         │
+│    - category: "Programming Languages"                          │
+│      items: "Python, Go, Java, C++..."                         │
+│                                                                  │
+│  experience: [...]                                              │
+│  projects: [...]                                                │
+└────────────────────┬───────────────────┬────────────────────────┘
+                     │                   │
+         ┌───────────┴─────────┐        │
+         │                     │        │
+         ▼                     ▼        ▼
+┌─────────────────┐  ┌─────────────────────────────────┐
+│  WORD PIPELINE  │  │      LaTeX PIPELINE (NEW!)      │
+│   (Existing)    │  │                                 │
+├─────────────────┤  ├─────────────────────────────────┤
+│                 │  │                                 │
+│  1. Read YAML   │  │  1. Read YAML                   │
+│                 │  │                                 │
+│  2. Load Word   │  │  2. Escape LaTeX special chars  │
+│     template    │  │     (&, %, $, #, _, etc.)      │
+│                 │  │                                 │
+│  3. Replace     │  │  3. Convert **bold** to         │
+│     placeholders│  │     \textbf{bold}              │
+│                 │  │                                 │
+│  4. Apply bold  │  │  4. Render Jinja2 template      │
+│     formatting  │  │     (((variables)))             │
+│                 │  │                                 │
+│  5. Save .docx  │  │  5. Compile with pdflatex       │
+│                 │  │     ├─ Parse LaTeX              │
+│                 │  │     ├─ Typeset document         │
+│                 │  │     └─ Generate PDF             │
+│                 │  │                                 │
+└────────┬────────┘  └──────────┬──────────────────────┘
+         │                      │
+         ▼                      ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                          OUTPUTS                                 │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│  📄 output/Generated_Resume.docx                                │
+│     • Microsoft Word format                                     │
+│     • ~30-50 KB                                                 │
+│     • Can edit manually in Word                                 │
+│     • Must convert to PDF manually                              │
+│     • Generation time: ~1 second                                │
+│                                                                  │
+│  📄 output/Generated_Resume.pdf                                 │
+│     • Professional LaTeX quality                                │
+│     • ~50-100 KB                                                │
+│     • Pixel-perfect consistency                                 │
+│     • No manual conversion needed                               │
+│     • Generation time: ~3 seconds                               │
+│                                                                  │
+└─────────────────────────────────────────────────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════
+                        QUICK COMMAND REFERENCE
+═══════════════════════════════════════════════════════════════════
+
+GENERATE WORD DOC:
+  python src/simple_generator.py
+  → output/Generated_Resume.docx
+
+GENERATE PDF:
+  python src/latex_generator.py
+  → output/Generated_Resume.pdf
+
+TEST LATEX INSTALL:
+  python test_latex_install.py
+
+
+═══════════════════════════════════════════════════════════════════
+                      DEPENDENCIES COMPARISON
+═══════════════════════════════════════════════════════════════════
+
+WORD PIPELINE                  LaTeX PIPELINE
+├─ Python 3.x                 ├─ Python 3.x
+├─ python-docx                ├─ latex (pip package)
+├─ pyyaml                     ├─ jinja2
+└─ Microsoft Word (for        ├─ pyyaml
+   manual editing)            └─ MiKTeX / TeX Live (~4 GB)
+                                  └─ pdflatex compiler
+
+
+═══════════════════════════════════════════════════════════════════
+                        FILE STRUCTURE
+═══════════════════════════════════════════════════════════════════
+
+job-application-automator/
+│
+├── config/
+│   ├── current_application.yaml  ← SINGLE SOURCE OF TRUTH
+│   └── constraints.yaml
+│
+├── templates/
+│   ├── Chandan_Resume_Format.docx      ← Word template
+│   └── resume_latex_template.tex       ← LaTeX template (NEW!)
+│
+├── src/
+│   ├── simple_generator.py        ← Word generator
+│   └── latex_generator.py         ← PDF generator (NEW!)
+│
+├── output/
+│   ├── Generated_Resume.docx      ← Word output
+│   ├── Generated_Resume.pdf       ← PDF output (NEW!)
+│   └── debug_resume.tex           ← Debug LaTeX (auto-generated)
+│
+├── test_latex_install.py          ← Installation test (NEW!)
+├── LATEX_SETUP.md                 ← Installation guide (NEW!)
+├── LATEX_README.md                ← Feature overview (NEW!)
+└── SETUP_SUMMARY.md               ← This summary (NEW!)
+
+
+═══════════════════════════════════════════════════════════════════
+                    LATEX TEMPLATE STRUCTURE
+═══════════════════════════════════════════════════════════════════
+
+resume_latex_template.tex:
+
+┌─────────────────────────────────────────────────────────────────┐
+│ \documentclass[10pt]{article}                                   │
+│ \usepackage{geometry, enumitem, hyperref, titlesec, tabularx}   │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│ HEADER                                                           │
+│ ├─ Name (large, bold)                                          │
+│ ├─ Title (from YAML)                                           │
+│ └─ Contact (email, LinkedIn, GitHub, Portfolio)                │
+│                                                                  │
+│ SUMMARY                                                          │
+│ └─ Paragraph with bold markers converted                       │
+│                                                                  │
+│ EDUCATION                                                        │
+│ ├─ MS in Computer Science (Northeastern)                       │
+│ └─ BE in Computer Science (NMIT)                               │
+│                                                                  │
+│ TECHNICAL SKILLS                                                 │
+│ └─ 7 categories in table format                                │
+│     ├─ Programming Languages                                   │
+│     ├─ AI & Machine Learning                                   │
+│     ├─ Cloud & Infrastructure                                  │
+│     └─ ...                                                      │
+│                                                                  │
+│ WORK EXPERIENCE                                                  │
+│ ├─ LSEG (5 bullets with bold)                                  │
+│ └─ Infosys (4 bullets with bold)                               │
+│                                                                  │
+│ PROJECTS                                                         │
+│ ├─ Project 1 (2 bullets)                                       │
+│ ├─ Project 2 (2 bullets)                                       │
+│ └─ Project 3 (2 bullets)                                       │
+│                                                                  │
+│ ACHIEVEMENTS                                                     │
+│ ├─ IEEE Paper                                                   │
+│ └─ AWS Certification                                            │
+│                                                                  │
+└─────────────────────────────────────────────────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════
+                    SETUP CHECKLIST
+═══════════════════════════════════════════════════════════════════
+
+□ Install MiKTeX
+  └─ winget install MiKTeX.MiKTeX
+  
+□ Install Python packages
+  └─ pip install latex jinja2 pyyaml
+  
+□ Test installation
+  └─ python test_latex_install.py
+  └─ Expected: All ✅ checks pass
+  
+□ Generate first PDF
+  └─ python src/latex_generator.py
+  └─ Expected: output/Generated_Resume.pdf created
+  
+□ Compare with Word output
+  └─ python src/simple_generator.py
+  └─ Compare quality of .docx vs .pdf
+  
+□ Celebrate! 🎉
+
+
+═══════════════════════════════════════════════════════════════════
+                    CUSTOMIZATION OPTIONS
+═══════════════════════════════════════════════════════════════════
+
+Want to customize the LaTeX template?
+
+1. FONTS
+   Add to preamble:
+   \usepackage{helvet}          % Helvetica
+   \renewcommand{\familydefault}{\sfdefault}
+
+2. COLORS
+   Add to preamble:
+   \usepackage{xcolor}
+   \definecolor{myblue}{RGB}{0,102,204}
+   
+   Use in sections:
+   \titleformat{\section}{\large\bfseries\color{myblue}}...
+
+3. SPACING
+   Adjust margins:
+   \usepackage[top=0.3in, bottom=0.3in, left=0.6in, right=0.6in]{geometry}
+   
+   Adjust section spacing:
+   \titlespacing*{\section}{0pt}{8pt}{5pt}
+
+4. BULLET POINTS
+   Customize:
+   \setlist[itemize]{noitemsep, topsep=3pt, leftmargin=1.5em}
+
+
+═══════════════════════════════════════════════════════════════════
+                         SUPPORT
+═══════════════════════════════════════════════════════════════════
+
+Installation issues:
+  → See LATEX_SETUP.md for detailed troubleshooting
+
+Python errors:
+  → Run test_latex_install.py for diagnostics
+
+LaTeX compilation errors:
+  → Check output/debug_resume.tex
+  → Compile manually: pdflatex output/debug_resume.tex
+
+Questions about LaTeX syntax:
+  → https://www.overleaf.com/learn
+
+Questions about system:
+  → Read LATEX_README.md
+
+
+═══════════════════════════════════════════════════════════════════
+                    YOU'RE ALL SET! 🚀
+═══════════════════════════════════════════════════════════════════
+
+Next command to run:
+  
+  python src/latex_generator.py
+
+This will generate your first professional PDF resume!
+```
