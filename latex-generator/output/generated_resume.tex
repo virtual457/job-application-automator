@@ -1,0 +1,150 @@
+% Chandan Gowda K S — Professional Resume Template
+% Generic template - customize via YAML configuration
+\documentclass[10pt]{article}
+
+\usepackage[
+  top=0.2in,
+  bottom=0.25in,
+  left=0.5in,
+  right=0.5in
+]{geometry}
+
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\pagenumbering{gobble}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+\setlist[itemize]{noitemsep, topsep=2pt, leftmargin=1.2em}
+
+\newcommand{\ext}{\kern0.08em\raisebox{0.15ex}{\tiny$\nearrow$}}
+
+\begin{document}
+\vspace*{-10pt}
+
+% ---------- Header ----------
+\begin{center}
+{\LARGE \textbf{Chandan Gowda K S}} \\[-2pt]
+
++1 (857) 421-7469 \textbar\
+\href{mailto:chandan.keelara@gmail.com}{chandan.keelara@gmail.com} \textbar\
+\href{https://www.linkedin.com/in/chandan-gowda-k-s-765194186/}{LinkedIn} \textbar\
+\href{https://virtual457.github.io/}{Portfolio} \textbar\
+\href{https://github.com/virtual457}{GitHub}
+\end{center}
+\vspace{-10pt}
+
+% ---------- Education ----------
+\section*{Education}
+
+\textbf{MS in Computer Science}, Northeastern University, Boston, MA
+\hfill \textit{Jan 2025 -- May 2027} \\
+\textit{Relevant Coursework:} Advanced Algorithms \& Data Structures, Database Management Systems
+\hfill \textbar\ \textit{GPA: 3.89/4.0}
+
+\vspace{4pt}
+
+\textbf{BE in Computer Science}, Nitte Meenakshi Institute of Technology, Bengaluru
+\hfill \textit{Aug 2016 -- Aug 2020} \\
+\textit{Relevant Coursework:} Data Structures, Algorithms, Operating Systems, Distributed Systems
+\hfill \textbar\ \textit{GPA: 8.76/10}
+
+% ---------- Technical Skills ----------
+\section*{Technical Skills}
+
+\begin{tabularx}{\textwidth}{l X}
+\textbf{Programming Languages} &
+Python, Java, Go, JavaScript, TypeScript, C++, SQL \\[3pt]
+\textbf{Backend Development} &
+Microservices, REST APIs, Service-Oriented Architecture, System Design, Event-Driven Architecture \\[3pt]
+\textbf{Cloud Platforms} &
+AWS (Lambda, SQS, API Gateway, EC2, S3, RDS, DynamoDB), Serverless Architecture \\[3pt]
+\textbf{Database and Testing} &
+PostgreSQL, MySQL, MongoDB, Redis, SQL Optimization, JUnit, PyTest, Unit Testing \\[3pt]
+\textbf{Infrastructure \& DevOps} &
+Docker, Kubernetes, CI/CD, Jenkins, Monitoring, Live Deployments, Version Control, Git \\[3pt]
+\textbf{AI \& ML} &
+PyTorch, TensorFlow, LangChain, RAG, Deep Learning, Computer Vision \\[3pt]
+\textbf{Software Development} &
+OOP, Clean Code Practices, Agile, Scrum, Performance Optimization, Scalability \\
+\end{tabularx}
+
+% ---------- Work Experience ----------
+\section*{Work Experience}
+
+\textbf{London Stock Exchange Group (LSEG)} \textbar\ Software Engineer
+\hfill \textit{Aug 2022 -- Dec 2024}
+\begin{itemize}
+  \item Engineered \textbf{large-scale data processing pipelines} transforming \textbf{7.5M+ XML records} across \textbf{180+ countries} into \textbf{high-quality structured datasets} used by analytics and data-driven applications.
+  
+  \item Built \textbf{event-driven Python services} on \textbf{AWS (Lambda, SQS)} with \textbf{priority-based routing} and orchestration logic, improving processing turnaround time by \textbf{35\%} for data-intensive applications.
+  
+  \item Optimized \textbf{batch processing} and \textbf{concurrent execution patterns}, reducing end-to-end pipeline latency by \textbf{40\%} and supporting reliable, \textbf{low-latency data access via REST APIs}.
+  
+  \item Developed and maintained \textbf{RESTful APIs in Python and Java}, enabling downstream systems to query, version, and consume processed data reliably, supporting integration with multiple internal platforms at global scale.
+  
+  \item Implemented \textbf{automated data validation}, \textbf{error handling}, and \textbf{monitoring mechanisms}, maintaining \textbf{99.9\% data integrity} across production pipelines processing millions of records daily.
+  
+\end{itemize}
+
+\textbf{Infosys} \textbar\ Software Engineer
+\hfill \textit{Oct 2020 -- Jul 2022}
+\begin{itemize}
+  \item Engineered \textbf{high-throughput Python data processing pipelines} with \textbf{concurrent execution} and \textbf{batch optimization}, achieving a \textbf{3x improvement in throughput} for enterprise data workflows.
+  
+  \item Designed and integrated \textbf{REST-based service workflows} to automate data retrieval and processing across multiple systems, reducing manual interventions by \textbf{50\%}.
+  
+  \item Optimized \textbf{database queries} and \textbf{batch ETL logic} to reduce data processing latency by \textbf{35\%} for high-volume enterprise workloads.
+  
+  \item Implemented \textbf{monitoring}, \textbf{validation}, and \textbf{automated retry mechanisms}, improving data accuracy and reliability by \textbf{20\%} for downstream analytics and reporting systems.
+  
+\end{itemize}
+
+
+% ---------- Projects ----------
+\section*{Projects}
+
+\textbf{LLM Multi-Agent Resume Optimizer} \textbar\ Python, FastAPI, React, LangChain, RAG, ChromaDB
+\hfill \href{https://github.com/virtual457/llm-multi-agent-resume-optimizer}{GitHub}\ext
+\begin{itemize}
+  \item Built a \textbf{multi-agent LLM system} using \textbf{LangChain} and \textbf{Retrieval-Augmented Generation (RAG)} to perform \textbf{semantic search} across structured and unstructured data for context-aware resume optimization.
+  
+  \item Developed a \textbf{full-stack AI application} with a \textbf{FastAPI backend} and \textbf{React/Next.js frontend}, integrating \textbf{vector search (ChromaDB)} and \textbf{real-time interactions via WebSocket/SSE} for interactive AI workflows.
+  
+\end{itemize}
+
+\textbf{Orion Platform} \textbar\ Go, Kubernetes, Docker, Operator SDK
+\hfill \href{https://github.com/virtual457/Orion-platform}{GitHub}\ext
+\begin{itemize}
+  \item Developed a \textbf{cloud-native service orchestration platform} using \textbf{Go and Kubernetes} to simplify deployment and lifecycle management of backend services across environments.
+  
+  \item Implemented \textbf{automated health checks}, \textbf{scaling logic}, and \textbf{lifecycle workflows} to manage multiple service deployments reliably across environments.
+  
+\end{itemize}
+
+\textbf{Dino Game Deep RL Agent} \textbar\ Python, PyTorch, Computer Vision, Deep Learning, GPU Training
+\hfill \href{https://github.com/virtual457/dino-game-AI}{GitHub}\ext
+\begin{itemize}
+  \item Implemented a \textbf{vision-based Double DQN agent} with a \textbf{ResNet-inspired architecture (1.5M parameters)}, using \textbf{stacked visual inputs} to learn control policies and achieve \textbf{real-time decision-making at 16.67 FPS}.
+  
+  \item Built an \textbf{automated machine learning training pipeline} with \textbf{data sampling}, \textbf{model evaluation}, and \textbf{performance monitoring} to improve training stability and real-time decision accuracy.
+  
+\end{itemize}
+
+
+% ---------- Achievements ----------
+\section*{Achievements}
+\begin{itemize}
+  \item \textbf{\href{https://www.credly.com/badges/29ec1719-01bc-42df-850d-f2a7a3e6bca6/linked_in_profile}{Earned AWS Certified Cloud Practitioner}}\ext, validating expertise in cloud architecture and core AWS services.
+  \item Published \textbf{IEEE research paper} on AI-based healthcare assistance system
+  (\href{https://ieeexplore.ieee.org/document/9532856}{IEEE Xplore})\ext.
+\end{itemize}
+
+\end{document}

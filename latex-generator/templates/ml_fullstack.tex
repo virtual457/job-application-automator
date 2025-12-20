@@ -1,0 +1,107 @@
+% Chandan Gowda K S — ML + Full-Stack Resume Template
+\documentclass[10pt]{article}
+
+\usepackage[
+  top=0.2in,
+  bottom=0.25in,
+  left=0.5in,
+  right=0.5in
+]{geometry}
+
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\pagenumbering{gobble}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+\setlist[itemize]{noitemsep, topsep=2pt, leftmargin=1.2em}
+
+\newcommand{\ext}{\kern0.08em\raisebox{0.15ex}{\tiny$\nearrow$}}
+
+\begin{document}
+\vspace*{-10pt}
+
+% ---------- Header ----------
+\begin{center}
+{\LARGE \textbf{((( header.name )))}} \\[-2pt]
+
+((* if header.title *))
+((( header.title ))) \\[-2pt]
+
+((* endif *))
+((( header.contact )))
+\end{center}
+\vspace{-10pt}
+
+% ---------- Education ----------
+\section*{Education}
+
+\textbf{MS in Computer Science}, Northeastern University, Boston, MA
+\hfill \textit{Jan 2025 -- May 2027} \\
+\textit{Relevant Coursework:} Machine Learning, Natural Language Processing, Web Development (MERN), Database Management
+\hfill \textbar\ \textit{GPA: 3.89/4.0}
+
+\vspace{4pt}
+
+\textbf{BE in Computer Science}, Nitte Meenakshi Institute of Technology, Bengaluru
+\hfill \textit{Aug 2016 -- Aug 2020} \\
+\textit{Relevant Coursework:} Data Structures, Algorithms, Operating Systems, Distributed Systems
+\hfill \textbar\ \textit{GPA: 8.76/10}
+
+% ---------- Technical Skills ----------
+\section*{Technical Skills}
+
+\begin{tabularx}{\textwidth}{l X}
+((* for skill in skills *))
+\textbf{((( skill.category )))} &
+((( skill.items )))((* if not loop.last *)) \\[3pt]((* else *)) \\((* endif *))
+
+((* endfor *))
+\end{tabularx}
+
+% ---------- Work Experience ----------
+\section*{Work Experience}
+
+((* for exp in experience *))
+\textbf{((( exp.company )))} \textbar\ ((( exp.role )))
+\hfill \textit{((( exp.duration )))}
+\begin{itemize}
+((* for bullet in exp.bullets *))
+  \item ((( bullet )))
+  
+((* endfor *))
+\end{itemize}
+
+((* endfor *))
+
+% ---------- Projects ----------
+\section*{Projects}
+
+((* for project in projects *))
+\textbf{((( project.title )))} \textbar\ ((( project.tech )))
+\hfill \href{((( project.github_link )))}{GitHub}\ext
+\begin{itemize}
+  \item ((( project.bullet1 )))
+  
+  \item ((( project.bullet2 )))
+  
+\end{itemize}
+
+((* endfor *))
+
+% ---------- Achievements ----------
+\section*{Achievements}
+\begin{itemize}
+  \item \textbf{\href{https://www.credly.com/badges/29ec1719-01bc-42df-850d-f2a7a3e6bca6/linked_in_profile}{Earned AWS Certified Cloud Practitioner}}\ext, validating expertise in cloud architecture and core AWS services.
+  \item Published \textbf{IEEE research paper} on AI-based healthcare assistance system
+  (\href{https://ieeexplore.ieee.org/document/9532856}{IEEE Xplore})\ext.
+\end{itemize}
+
+\end{document}

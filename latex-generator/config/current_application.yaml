@@ -1,0 +1,15 @@
+# Ripple XRP Ledger Smart Contracts Intern - Resume Configuration
+# Building section by section
+
+header:
+  name: "Chandan Gowda K S"
+  title: ""  # Will add later
+  contact: "+1 (857) 421-7469 \\textbar\\\n\\href{mailto:chandan.keelara@gmail.com}{chandan.keelara@gmail.com} \\textbar\\\n\\href{https://www.linkedin.com/in/chandan-gowda-k-s-765194186/}{LinkedIn} \\textbar\\\n\\href{https://virtual457.github.io/}{Portfolio} \\textbar\\\n\\href{https://github.com/virtual457}{GitHub}"
+
+company_name: "Ripple"
+
+education:
+  ms_coursework: "Advanced Algorithms & Data Structures, Database Management Systems, Distributed Systems"
+  be_coursework: "Data Structures, Algorithms, Operating Systems, Distributed Systems"
+
+# Skills section - NEXT

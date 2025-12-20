@@ -1,0 +1,74 @@
+# Sample YAML Configuration for LaTeX Resume Generation
+# Copy this to current_application.yaml and edit for your application
+
+header:
+  name: "Chandan Gowda K S"
+  title: ""  # Leave empty for no subtitle, or add like "ML Engineer | MS CS @ Northeastern"
+  contact: "+1 (857) 421-7469 \\textbar\\\n\\href{mailto:chandan.keelara@gmail.com}{chandan.keelara@gmail.com} \\textbar\\\n\\href{https://www.linkedin.com/in/chandan-gowda-k-s-765194186/}{LinkedIn} \\textbar\\\n\\href{https://virtual457.github.io/}{Portfolio} \\textbar\\\n\\href{https://github.com/virtual457}{GitHub}"
+
+company_name: "Luca IQ"
+
+education:
+  ms_coursework: "Machine Learning, Natural Language Processing, Web Development (MERN)"
+  be_coursework: "Data Structures, Algorithms, Operating Systems, Distributed Systems"
+
+skills:
+  - category: "Programming Languages"
+    items: "Python, Java, Go, JavaScript, TypeScript, C++, SQL"
+  
+  - category: "AI & ML"
+    items: "PyTorch, TensorFlow, Deep Learning, Computer Vision, CNNs, Deep RL"
+  
+  - category: "ML Infrastructure"
+    items: "LangChain, RAG, Vector Databases, Model Training, Model Evaluation"
+  
+  - category: "Backend Development"
+    items: "Microservices, REST APIs, FastAPI, Flask, Event-Driven Architecture"
+  
+  - category: "Cloud Platforms"
+    items: "AWS (Lambda, SQS, API Gateway, EC2, S3), Docker, Kubernetes"
+  
+  - category: "Database and Testing"
+    items: "PostgreSQL, MongoDB, MySQL, ChromaDB, PyTest, JUnit"
+  
+  - category: "Software Development"
+    items: "Git, CI/CD, System Design, Agile, Performance Optimization"
+
+experience:
+  - company: "London Stock Exchange Group (LSEG)"
+    role: "Software Engineer"
+    duration: "Aug 2022 -- Dec 2024"
+    bullets:
+      - "Engineered **large-scale data processing pipelines** transforming **7.5M+ XML records** across **180+ countries** into **high-quality structured datasets** used by analytics and data-driven applications."
+      - "Built **event-driven Python services** on **AWS (Lambda, SQS)** with **priority-based routing** and orchestration logic, improving processing turnaround time by **35%** for data-intensive applications."
+      - "Optimized **batch processing** and **concurrent execution patterns**, reducing end-to-end pipeline latency by **40%** and supporting reliable, **low-latency data access via REST APIs**."
+      - "Developed and maintained **RESTful APIs in Python and Java**, enabling downstream systems to query, version, and consume processed data reliably, supporting integration with multiple internal platforms at global scale."
+      - "Implemented **automated data validation**, **error handling**, and **monitoring mechanisms**, maintaining **99.9% data integrity** across production pipelines processing millions of records daily."
+  
+  - company: "Infosys"
+    role: "Software Engineer"
+    duration: "Oct 2020 -- Jul 2022"
+    bullets:
+      - "Engineered **high-throughput Python data processing pipelines** with **concurrent execution** and **batch optimization**, achieving a **3x improvement in throughput** for enterprise data workflows."
+      - "Designed and integrated **REST-based service workflows** to automate data retrieval and processing across multiple systems, reducing manual interventions by **50%**."
+      - "Optimized **database queries** and **batch ETL logic** to reduce data processing latency by **35%** for high-volume enterprise workloads."
+      - "Implemented **monitoring**, **validation**, and **automated retry mechanisms**, improving data accuracy and reliability by **20%** for downstream analytics and reporting systems."
+
+projects:
+  - title: "LLM Multi-Agent Resume Optimizer"
+    tech: "Python, FastAPI, React, LangChain, RAG, ChromaDB"
+    github_link: "https://github.com/virtual457/llm-multi-agent-resume-optimizer"
+    bullet1: "Built a **multi-agent LLM system** using **LangChain** and **Retrieval-Augmented Generation (RAG)** to perform **semantic search** across structured and unstructured data for context-aware resume optimization."
+    bullet2: "Developed a **full-stack AI application** with a **FastAPI backend** and **React/Next.js frontend**, integrating **vector search (ChromaDB)** and **real-time interactions via WebSocket/SSE** for interactive AI workflows."
+  
+  - title: "Dino Game Deep RL Agent"
+    tech: "Python, PyTorch, Computer Vision, Deep Learning, GPU Training"
+    github_link: "https://github.com/virtual457/dino-game-AI"
+    bullet1: "Implemented a **vision-based Double DQN agent** with a **ResNet-inspired architecture (1.5M parameters)**, using **stacked visual inputs** to learn control policies and achieve **real-time decision-making at 16.67 FPS**."
+    bullet2: "Built an **automated machine learning training pipeline** with **data sampling**, **model evaluation**, and **performance monitoring** to improve training stability and real-time decision accuracy."
+  
+  - title: "Kambaz Learning Management System"
+    tech: "Next.js, React, Node.js, Express, MongoDB"
+    github_link: "https://github.com/virtual457/kambaz-next-js"
+    bullet1: "Architected a **full-stack Learning Management System** with a **React/Next.js frontend** and **Node.js/Express backend**, designing **RESTful APIs**, **role-based authentication** for core course and assignment workflows."
+    bullet2: "Implemented **end-to-end application deployment** with cloud-hosted services, integrating a persistent **MongoDB data layer**, **state management with Redux** ensuring consistent data flow and session-aware behavior across users."
