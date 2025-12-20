@@ -13,3 +13,66 @@ education:
   be_coursework: "Data Structures, Algorithms, Operating Systems, Distributed Systems"
 
 # Skills section - NEXT
+
+skills:
+  - category: "Programming Languages"
+    items: "C++, JavaScript, Python, Go, Java, TypeScript, SQL"
+  
+  - category: "Systems & Backend Development"
+    items: "Distributed Systems, System Design, Concurrent Programming, Event-Driven Architecture, Microservices"
+  
+  - category: "Database and Testing"
+    items: "PostgreSQL, MySQL, MongoDB, Database Design, Unit Testing, Integration Testing, JUnit, PyTest"
+  
+  - category: "Software Development"
+    items: "SDLC, OOP, Clean Code, Design Patterns, Version Control, Git, Code Review, Agile"
+  
+  - category: "Infrastructure & DevOps"
+    items: "Docker, Kubernetes, CI/CD, Jenkins, Open-Source Contribution, Linux/Unix"
+  
+  - category: "Cloud Platforms"
+    items: "AWS (Lambda, SQS, API Gateway, EC2, S3), Serverless Architecture"
+  
+  - category: "AI & ML"
+    items: "PyTorch, TensorFlow, Deep Learning, Computer Vision"
+
+experience:
+  - company: "London Stock Exchange Group (LSEG)"
+    role: "Software Engineer"
+    duration: "Aug 2022 -- Dec 2024"
+    bullets:
+      - "Engineered **large-scale data processing pipelines** transforming **7.5M+ XML records** across **180+ countries** into **high-quality structured datasets** used by analytics and data-driven applications."
+      - "Built **event-driven Python services** on **AWS (Lambda, SQS)** with **priority-based routing** and orchestration logic, improving processing turnaround time by **35%** for data-intensive applications."
+      - "Optimized **batch processing** and **concurrent execution patterns**, reducing end-to-end pipeline latency by **40%** and supporting reliable, **low-latency data access via REST APIs**."
+      - "Developed and maintained **RESTful APIs in Python and Java**, enabling downstream systems to query, version, and consume processed data reliably, supporting integration with multiple internal platforms at global scale."
+      - "Implemented **automated data validation**, **error handling**, and **monitoring mechanisms**, maintaining **99.9% data integrity** across production pipelines processing millions of records daily."
+  
+  - company: "Infosys"
+    role: "Software Engineer"
+    duration: "Oct 2020 -- Jul 2022"
+    bullets:
+      - "Engineered **high-throughput Python data processing pipelines** with **concurrent execution** and **batch optimization**, achieving a **3x improvement in throughput** for enterprise data workflows."
+      - "Designed and integrated **REST-based service workflows** to automate data retrieval and processing across multiple systems, reducing manual interventions by **50%**."
+      - "Optimized **database queries** and **batch ETL logic** to reduce data processing latency by **35%** for high-volume enterprise workloads."
+      - "Implemented **monitoring**, **validation**, and **automated retry mechanisms**, improving data accuracy and reliability by **20%** for downstream analytics and reporting systems."
+
+# Projects section - NEXT
+
+projects:
+  - title: "Orion Platform"
+    tech: "Go, Kubernetes, Docker, Operator SDK, Cloud-Native Architecture"
+    github_link: "https://github.com/virtual457/Orion-platform"
+    bullet1: "Developed a **cloud-native service orchestration platform** using **Go and Kubernetes** to simplify deployment and lifecycle management of backend services across multiple environments."
+    bullet2: "Implemented **event-driven reconciliation loops** with **automated health checks**, **scaling logic**, and **lifecycle workflows** to manage service deployments reliably."
+  
+  - title: "Calendly - Calendar Management System"
+    tech: "Java, Design Patterns, Unit Testing, Maven, OOP"
+    github_link: "https://github.com/virtual457/Calendly"
+    bullet1: "Architected a **multi-interface calendar application** implementing **6+ design patterns** (Command, Factory, Adapter, Builder, Observer, Strategy) with strict **SOLID principles** adherence across 52 source files."
+    bullet2: "Developed **15+ command modules** with **comprehensive unit testing**, achieving **98% line coverage** and **95% mutation coverage** through rigorous **test-driven development** practices."
+  
+  - title: "Port Management System"
+    tech: "Django, Python, PostgreSQL, Advanced SQL, REST APIs"
+    github_link: "https://github.com/virtual457/Port-Management-System"
+    bullet1: "Developed a **full-stack maritime logistics platform** with **Django backend** and **PostgreSQL database**, implementing **complex relational schemas** and **multi-role authentication** systems."
+    bullet2: "Implemented **Dijkstra's pathfinding algorithm in SQL stored procedures** for route optimization, demonstrating expertise in **algorithmic problem-solving** and **database optimization** techniques."
